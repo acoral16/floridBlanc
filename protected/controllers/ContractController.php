@@ -71,7 +71,7 @@ class ContractController extends Controller
 		//Solo se permiten crear contratos si se sabe el proyecto asociado
 		if(isset($_GET['idP']))
 		{
-			$project = Projects::model()->findByPk($idP);
+			$project = Project::model()->findByPk($idP);
 			if($project->project_createdBy === Yii::app()->user->id || Yii::app()->user->isAdmin()) //Solo admin o el usuario que creo el proyecto puede agregarle contratos
 			{
 				$model=new Contract;
@@ -156,7 +156,7 @@ class ContractController extends Controller
 	public function actionIndex()
 	{
 		if(isset($_GET['idP'])){
-			$model = Projects::model()->findByPk($_GET['idP']);
+			$model = Project::model()->findByPk($_GET['idP']);
 			if($model->project_createdBy === Yii::app()->user->id || Yii::app()->user->isAdmin()) {		 
 				$model=new Contract('search');
 				$model->unsetAttributes();  // clear any default values

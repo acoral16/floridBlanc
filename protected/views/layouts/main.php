@@ -63,7 +63,7 @@
 								'items'=>array(
 										array('label'=>'Inicio', 'url'=>array('/site/index')),
 										array('label'=>'Admin', 'url'=>array('/admin/index'), 'visible'=>!Yii::app()->user->isGuest && Yii::app()->user->isAdmin()),
-										array('label'=>'Proyectos', 'url'=>array('/projects/index'), 'visible'=>!Yii::app()->user->isGuest),
+										array('label'=>'Proyectos', 'url'=>array('/project/index'), 'visible'=>!Yii::app()->user->isGuest),
 										array('label'=>'Contactenos', 'url'=>array('/site/contact'), 'visible'=>Yii::app()->user->isGuest),
 										array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about'), 'visible'=>Yii::app()->user->isGuest)
 								),

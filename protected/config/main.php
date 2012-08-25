@@ -42,15 +42,15 @@ return array(
 		),
 		
 		//Encripta las urls	
- 		'urlManager'=>array(
- 			'urlFormat'=>'path',
- 			'showScriptName'=>false,
-			'rules'=>array(
-						array(
-								'class' => 'application.components.CustomUrlRule',
-						),
-				),
- 		),
+//  		'urlManager'=>array(
+//  			'urlFormat'=>'path',
+//  			'showScriptName'=>false,
+// 			'rules'=>array(
+// 						array(
+// 								'class' => 'application.components.CustomUrlRule',
+// 						),
+// 				),
+//  		),
 			
 			'session' => array(
 					'class' => 'CDbHttpSession',
@@ -63,13 +63,13 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=floridab_proyectos',
-			//'connectionString' => 'mysql:host=localhost;dbname=florida',
+			//'connectionString' => 'mysql:host=localhost;dbname=floridab_proyectos',
+			'connectionString' => 'mysql:host=localhost;dbname=florida',
 			'emulatePrepare' => true,
-			'username' => 'floridab_root',
-			'password' => 'macl123456',
-			//'username' => 'root',
-			//'password' => '',
+			//'username' => 'floridab_root',
+			//'password' => 'macl123456',
+			'username' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 

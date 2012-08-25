@@ -205,4 +205,4 @@ FOR EACH ROW BEGIN
   UPDATE project SET project_avanceFisico = avanceFisico WHERE project_id = idProject;
 END//
 
- /floridablanca/floridablanca/index.php/projects/admin/Projects%5Bproject_nombre%5D/423/Projects%5Bproject_metaResultado%5D//Projects%5Bproject_avanceFisico%5D//Projects%5Bproject_avanceFinanciero%5D//Projects%5Bproject_ssepi%5D//Projects_page/1/ajax/projects-grid/Projects_sort/project_nombre
+ 

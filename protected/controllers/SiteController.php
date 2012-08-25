@@ -43,7 +43,7 @@ class SiteController extends Controller
 			if($model->validate() && $model->login() && Yii::app()->user->isAdmin())
 				$this->redirect('index.php?r=admin');
 			if($model->validate() && $model->login())
-				$this->redirect('index.php?r=Projects');
+				$this->redirect('index.php?r=Project');
 			
 			//Display error page
 			throw new CHttpException(401,'Nombre de usuario o contrasena incorrectos.');
@@ -108,7 +108,7 @@ class SiteController extends Controller
 			if($model->validate() && $model->login() && Yii::app()->user->isAdmin())
 				$this->redirect('index.php?r=admin');
 			if($model->validate() && $model->login())
-				$this->redirect('index.php?r=Projects');
+				$this->redirect('index.php?r=Project');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));

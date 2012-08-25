@@ -169,7 +169,7 @@ class ActaController extends Controller
 	public function actionIndex()
 	{
 		if(isset($_GET['idP'])){
-			$model = Projects::model()->findByPk($_GET['idP']);
+			$model = Project::model()->findByPk($_GET['idP']);
 			if($model->project_createdBy === Yii::app()->user->id || Yii::app()->user->isAdmin()) {
 				$model=new Acta('search');
 				$model->unsetAttributes();  // clear any default values
